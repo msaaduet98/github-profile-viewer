@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import './ProfilePage.css';
 
 const ProfilePage = () => {
   const { username } = useParams();
@@ -23,7 +24,11 @@ const ProfilePage = () => {
       <img src={user.avatar_url} alt={user.login} />
       <h2>{user.name}</h2>
       <p>{user.bio}</p>
-      <p><a href={user.html_url} target="_blank" rel="noopener noreferrer">View Profile on GitHub</a></p>
+      <p>
+        <a href={user.html_url} target="_blank" rel="noopener noreferrer">
+          View Profile on GitHub
+        </a>
+      </p>
     </div>
   );
 };

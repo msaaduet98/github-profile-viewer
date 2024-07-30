@@ -1,29 +1,40 @@
 .profile-page {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .profile-page img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .profile-page h2 {
-  margin-top: 10px;
-  font-size: 24px;
+  margin-top: 20px;
+  font-size: 28px;
+  color: #333;
 }
 
 .profile-page p {
   margin-top: 10px;
   font-size: 16px;
+  color: #666;
 }
 
 .profile-page a {
-  color: #0366d6;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #0366d6;
+  color: white;
   text-decoration: none;
+  transition: background-color 0.2s;
 }
 
 .profile-page a:hover {
-  text-decoration: underline;
+  background-color: #025bb5;
 }

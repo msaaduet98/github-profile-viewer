@@ -14,13 +14,15 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <input
-        type="text"
-        placeholder="Search for GitHub profiles..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      <button onClick={handleSearch}>Search</button>
+      <div className="search-container">
+        <input
+          type="text"
+          placeholder="Search for GitHub profiles..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <button onClick={handleSearch}>Search</button>
+      </div>
       <div className="cards-container">
         {users.map(user => (
           <Card key={user.id} user={user} />
