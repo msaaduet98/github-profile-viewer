@@ -1,0 +1,29 @@
+.profile-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-page img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-page h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.profile-page p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.profile-page a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.profile-page a:hover {
+  text-decoration: underline;
+}
